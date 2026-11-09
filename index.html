@@ -146,7 +146,21 @@
                 <button class="filtro_btn" type="button" data-filtro="superheroes">Superheroes/Acción</button>
                 <button class="filtro_btn" type="button" data-filtro="terror">Terror</button>
             </div>
-            <div class="filtro-precio"></div>
+            <div class="filtro-precio">
+                <p class="precio-texto">3.00€ - 20.00€</p>
+                <div class="precio-fila">
+                    <span class="etiqueta">Precio:</span>
+                    <div class="rango">
+                        <div class="rango-linea">
+                            <div class="rango-relleno"></div>
+                        </div>
+                        <label for="merch-min" class="sr-only">Precio mínimo</label>
+                        <input type="range" class="rango__input" id="merch-min" min="3" max="20" step="0.5" value="3">
+                        <label for="merch-max" class="sr-only">Precio máximo</label>
+                        <input type="range" class="rango__input" id="merch-max" min="3" max="20" step="0.5" value="20">
+                    </div>
+                </div>
+            </div>
             <div class="galeria">
                 <article class="catalogo_item">
                     <figure>
@@ -360,12 +374,141 @@
             </div>
         </section>
         <section id="eventos">
+            <h1>Eventos</h1>
             <div class="grid_eventos">
-                <article class="galeria_eventos">
-                    <h1>Titulo</h1>
-                    <p>Explicación</p>
+                <article class="card_evento">
+                    <h2 class="evento-titulo">Titulo</h2>
+                    <p class="descripcion">Explicación</p>
+                    <ul class="datos">
+                        <li><i data-feather="calendar"></i>21/11 - 20:00h</li>
+                        <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons</li>
+                    </ul>
+                </article>
+                <article class="card_evento">
+                    <h2 class="evento-titulo">Titulo</h2>
+                    <p class="descripcion">Explicación</p>
+                    <ul class="datos">
+                        <li><i data-feather="calendar"></i>21/11 - 20:00h</li>
+                        <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons</li>
+                    </ul>
+                </article>
+                <article class="card_evento">
+                    <h2 class="evento-titulo">Titulo</h2>
+                    <p class="descripcion">Explicación</p>
+                    <ul class="datos">
+                        <li><i data-feather="calendar"></i>21/11 - 20:00h</li>
+                        <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons</li>
+                    </ul>
+                </article>
+                <article class="card_evento">
+                    <h2 class="evento-titulo">Titulo</h2>
+                    <p class="descripcion">Explicación</p>
+                    <ul class="datos">
+                        <li><i data-feather="calendar"></i>21/11 - 20:00h</li>
+                        <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons</li>
+                    </ul>
+                </article>
+                <article class="card_evento">
+                    <h2 class="evento-titulo">Titulo</h2>
+                    <p class="descripcion">Explicación</p>
+                    <ul class="datos">
+                        <li><i data-feather="calendar"></i>21/11 - 20:00h</li>
+                        <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons</li>
+                    </ul>
+                </article>
+                <article class="card_evento">
+                    <h2 class="evento-titulo">Titulo</h2>
+                    <p class="descripcion">Explicación</p>
+                    <ul class="datos">
+                        <li><i data-feather="calendar"></i>21/11 - 20:00h</li>
+                        <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons</li>
+                    </ul>
                 </article>
             </div>
+        </section>
+
+        <section id="merchandaising">
+            <h1>Merchandaising</h1>
+            <div class="filtro-precio">
+                <p class="precio-texto">3.00€ - 20.00€</p>
+                <div class="precio-fila">
+                    <span class="etiqueta">Precio:</span>
+                    <div class="rango">
+                        <div class="rango-linea">
+                            <div class="rango-relleno"></div>
+                        </div>
+                        <label for="merch-min" class="sr-only">Precio mínimo</label>
+                        <input type="range" class="rango__input" id="merch-min" min="3" max="20" step="0.5" value="3">
+                        <label for="merch-max" class="sr-only">Precio máximo</label>
+                        <input type="range" class="rango__input" id="merch-max" min="3" max="20" step="0.5" value="20">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-horizontal">
+                <button type="button" class="scroll-flecha">
+                    <i data-feather="chevron-left"></i>
+                </button>
+                <div class="scroll-contenido" id="merch-contenido"></div>
+                <button type="button" class="scroll-flecha">
+                    <i data-feather="chevron-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h1>Contacto</h1>
+            <div class="contacto">
+                <div class="contacto-info">
+                    <h2>Nuestra ubicación, telefono y correo más inmediatos</h2>
+                    <div class="contacto-lista">
+                        <p class="contacto-data">
+                            <span class="icono"><i data-feather="map-pin"></i></span>
+                            <span>Tienda Fantastic Cartoons C/Calanda Nº9 España/Madrid 28043</span>
+                        </p>
+                          <p class="contacto-data">
+                            <span class="icono"><i data-feather="phone-call"></i></span>
+                            <span>Llamenos al: 617 258 934</span>
+                        </p>
+                          <p class="contacto-data">
+                            <span class="icono"><i data-feather="mail"></i></span>
+                            <span>Correo electronico: admin@FantasticCartoons.com</span>
+                        </p>
+                    </div>
+                </div>
+                <form action="" class="formulario" novalidate>
+                    <h2>Escribenos</h2>
+                    <div class="form-item">
+                        <label for="asunto" class="form-label">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" class="form-input">
+                        <p class="form-error" id="error-asunto"></p>
+                    </div>
+                      <div class="form-item">
+                        <label for="email" class="form-label">Dirección de correo electrónico:</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="alexander@gmail.com">
+                        <p class="form-error" id="error-email"></p>
+                    </div>
+                      <div class="form-item">
+                        <span class="form-label">Adjuntar archivo:</span>
+                        <div class="form-archivo">
+                            <input type="file" id="archivo" name="archivo" accept=".jpg,.jpeg,.png,.pdf" class="file">
+                            <label for="archivo" class="btn-archivo">Elige el archivo</label>
+                            <span class="nombre-archivo">Ningún archivo</span>
+                            <span class="opcional">*Opcional</span>
+                        </div>
+                        <p class="form-error" id="error-archivo"></p>
+                    </div>
+                      <div class="form-item">
+                        <label for="mensaje" class="form-label">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" class="form-input text-area" rows="4" placeholder="¿Que problema tienes?"></textarea>
+                        <p class="form-error" id="error-mensaje"></p>
+                    </div>
+                    <div class="form-btn">
+                        <button type="submit" class="btn btn-enviar">Enviar</button>
+                        <button type="reset" class="btn btn-borrar">Borrar</button>
+                    </div>
+                </form>
+            </div>
+
         </section>
     </main>
     <script src="https://unpkg.com/feather-icons"></script>
