@@ -1,0 +1,153 @@
+:root{
+    --background: #EEE8E6;
+    --black-violet: #171123;
+    --pink: #EBA0F3;
+    --blue-lavender: #97A3E4;
+    --blue: #42A6D5;
+    --purple: #8D2BC2;
+    --titulos: "Fontdiner Swanky", serif;
+    --subtitulos: "Bangers", system-ui;
+    --texto: "K2D", sans-serif;
+    --radio: 14px;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--black-violet);
+    font-family: var(--texto);
+    line-height: 1.5;
+}
+
+body.sin-scroll{
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+button, input, select, textarea{
+    font: inherit;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--black-violet);
+    padding: 0.6rem 1.5rem;
+}
+
+.menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1.2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.nav-list{
+    display: flex;
+    gap: 3rem;
+}
+
+.nav-link{
+    position: relative;
+    color: var(--background);
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.25s ease;
+}
+
+.nav-link:hover{
+    color: var(--pink);
+}
+
+.hamburger{
+    display: none;
+    order: 3;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    color: var(--background);
+    font-size: 1.3rem;
+}
+
+.abrir, .cerrar{
+    display: flex;
+}
+
+.cerrar, .hamburger.is-abierto .abrir{
+    display: none;
+}
+
+.hamburger.is-abierto .cerrar{
+    display: flex;
+}
+
+.buscador{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    max-width: 1200px;
+    margin: 1rem auto;
+    padding: 0.3rem 1rem;
+    background-color: var(--background);
+    border-radius: var(--radio);
+}
+
+.busquedas{
+    flex: 1;
+    min-width: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: var(--purple);
+}
+
+.buscar_btn{
+    display: flex;
+    padding: 0.3rem;
+    border: none;
+    border-radius: var(--radio);
+    background-color: var(--background);
+    color: var(--black-violet);
+}
