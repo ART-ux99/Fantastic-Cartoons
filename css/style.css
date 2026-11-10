@@ -1,4 +1,4 @@
-:root{
+:root {
     --background: #EEE8E6;
     --black-violet: #171123;
     --pink: #EBA0F3;
@@ -11,47 +11,47 @@
     --radio: 14px;
 }
 
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--background);
     color: var(--black-violet);
     font-family: var(--texto);
     line-height: 1.5;
 }
 
-body.sin-scroll{
+body.sin-scroll {
     overflow: hidden;
 }
 
-img{
+img { 
     width: 100%;
     vertical-align: middle;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
 
-button, input, select, textarea{
+button, input, select, textarea {
     font: inherit;
 }
 
-.sr-only{
+.sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -60,7 +60,9 @@ button, input, select, textarea{
     clip-path: inset(50%);
 }
 
-header{
+/* NAV */
+
+header {
     position: sticky;
     top: 0;
     z-index: 100;
@@ -68,7 +70,7 @@ header{
     padding: 0.6rem 1.5rem;
 }
 
-.menu{
+.menu {
     position: relative;
     display: flex;
     align-items: center;
@@ -78,17 +80,17 @@ header{
     margin: 0 auto;
 }
 
-.nav-logo{
+.nav-logo {
     width: 3.5rem;
     height: 3.5rem;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     gap: 3rem;
 }
 
-.nav-link{
+.nav-link {
     position: relative;
     color: var(--background);
     font-size: 1.3rem;
@@ -97,11 +99,11 @@ header{
     transition: color 0.25s ease;
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--pink);
 }
 
-.hamburger{
+.hamburger {
     display: none;
     order: 3;
     padding: 0.5rem;
@@ -111,19 +113,19 @@ header{
     font-size: 1.3rem;
 }
 
-.abrir, .cerrar{
+.abrir, .cerrar {
     display: flex;
 }
 
-.cerrar, .hamburger.is-abierto .abrir{
+.cerrar, .hamburger.is-abierto .abrir {
     display: none;
 }
 
-.hamburger.is-abierto .cerrar{
+.hamburger.is-abierto .cerrar {
     display: flex;
 }
 
-.buscador{
+.buscador {
     display: flex;
     align-items: center;
     gap: 0.6rem;
@@ -134,7 +136,7 @@ header{
     border-radius: var(--radio);
 }
 
-.busquedas{
+.busquedas {
     flex: 1;
     min-width: 0;
     border: none;
@@ -143,7 +145,7 @@ header{
     color: var(--purple);
 }
 
-.buscar_btn{
+.buscar_btn {
     display: flex;
     padding: 0.3rem;
     border: none;
@@ -152,7 +154,9 @@ header{
     color: var(--black-violet);
 }
 
-.hero{
+/* HERO */
+
+.hero { 
     position: relative;
     overflow: hidden;
     background-color: var(--black-violet);
@@ -174,7 +178,7 @@ header{
     display: block;
 }
 
-.slideshow__controles{
+.slideshow__controles {
     position: absolute;
     left: 50%;
     bottom: 1.8rem;
@@ -183,7 +187,7 @@ header{
     gap: 0.7rem;
 }
 
-.punto{
+.punto {
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 50%;
@@ -191,17 +195,19 @@ header{
     transition: background-color 0.25s ease, transform 0.25s ease;
 }
 
-.puntois-active{
+.puntois-active {
     background-color: var(--pink);
     transform: scale(1.3);
 }
+
+/* SECCION NOVEDADES Y PARTE DE MERCHANDAISING */
 
 .seccion {
     max-width: 1200px;
     padding: 4rem 1.5rem 2rem;
 }
 
-.seccion-titulo{
+.seccion-titulo {
     margin-bottom: 2rem;
     font-family: var(--titulos);
     text-align: center;
@@ -210,11 +216,11 @@ header{
     font-weight: 400;
 }
 
-.scroll-horizontal{
+.scroll-horizontal {
     position: relative;
 }
 
-.scroll-contenido{
+.scroll-contenido {
     display: flex;
     gap: 1.8rem;
     overflow-x: auto;
@@ -223,11 +229,11 @@ header{
     scrollbar-color: var(--black-violet) transparent;
 }
 
-.scroll-contenido .tarjeta{
+.scroll-contenido .tarjeta {
     flex: 0 0 220px;
 }
 
-.scroll-flecha{
+.scroll-flecha {
     position: absolute;
     top: 35%;
     z-index: 2;
@@ -245,7 +251,7 @@ header{
     color: var(--purple);
 }
 
-.tarjeta{
+.tarjeta {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,7 +259,7 @@ header{
     text-align: center;
 }
 
-.tarjeta-img{
+.tarjeta-img {
     position: relative;
     width: 100%;
     aspect-ratio: 2 / 3;
@@ -261,17 +267,17 @@ header{
     background-color: var(--blue-lavender);
 }
 
-.tarjeta-merch .tarjeta-img{
+.tarjeta-merch .tarjeta-img {
     aspect-ratio: 1 / 1;
 }
 
-.tarjeta-img img{
+.tarjeta-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.badge{
+.badge {
     position: absolute;
     left: 0.5rem;
     bottom: 0.5rem;
@@ -287,7 +293,7 @@ header{
     font-size: 0.9rem; 
 }
 
-.estado{
+.estado {
     padding: 0.15rem 1rem;
     border-radius: 70%;
     color: var(--background);
@@ -295,26 +301,26 @@ header{
     text-transform: uppercase;
 }
 
-.diponible{
+.diponible {
     background-color: var(--purple);
 }
 
-.agotado{
+.agotado {
     background-color: var(--black-violet);
     color: var(--pink);
 }
 
-.tarjeta-precio{
+.tarjeta-precio {
     font-size: 1.2rem;
 }
 
-.btn{
+.btn {
     padding: 0.5rem 1.6rem;
     border: none;
     transition: bacckground-color 0.25s ease, color 0.25s ease;
 }
 
-.btn-vermas, .btn-carrito{
+.btn-vermas, .btn-carrito {
     display: flex;
     justify-content: center;
     width: 80%;
@@ -323,29 +329,31 @@ header{
     transform: skewX(-12deg)
 }
 
-.btn-vermas{
+.btn-vermas {
     background-color: var(--blue);
     color: var(--background);
     font-size: 1.1rem;
 }
 
-.btn-vermas:hover{
+.btn-vermas:hover {
     background-color: var(--pink);
     color: var(--purple);
 }
 
-.btn-carrito:hover{
+.btn-carrito:hover {
     background-color: var(--blue);
     color: var(--background);
 }
 
-.btn-carrito:disabled{
+.btn-carrito:disabled {
     background-color: #D9D4DF;
     color: #5E566B;
     cursor: not-allowed;
 }
 
-.filtros{
+/* SECCION CATALOGO GENERAL y PARTE DE MERCHANDAISING */
+
+.filtros {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -353,7 +361,7 @@ header{
     border-bottom: 3px solid var(--pink);
 }
 
-.filtro_btn{
+.filtro_btn {
     padding: 0.6rem 0.2rem;
     border: none;
     border-bottom: 3px solid transparent;
@@ -364,16 +372,16 @@ header{
     transition: color 0.25s ease, border-color 0.25s ease;
 }
 
-.filtro_btn:hover{
+.filtro_btn:hover {
     color: var(--purple);
 }
 
-.filtro_btn.is-active{
+.filtro_btn.is-active {
     color: var(--purple);
     border-bottom-color: var(--purple);
 }
 
-.filtro-precio{
+.filtro-precio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -381,28 +389,28 @@ header{
     margin: 1.8rem 0 1rem;
 }
 
-.precio-texto{
+.precio-texto {
     font-weight: 700;
 }
 
-.precio-fila{
+.precio-fila {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.etiqueta{
+.etiqueta {
     font-size: 0.9rem;
     font-weight: 700;
 }
 
-.rango{
+.rango {
     position: relative;
     width: 240px;
     height: 24px;
 }
 
-.rango-linea{
+.rango-linea {
     position: absolute;
     top: 50%;
     left: 0;
@@ -413,14 +421,14 @@ header{
     border-radius: 5px;
 }
 
-.rango-relleno{
+.rango-relleno {
     position: absolute;
     top: 0;
     height: 100%;
     background-color: var(--purple);
 }
 
-.rango__input{
+.rango__input {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -450,17 +458,145 @@ header{
     pointer-events: auto;
 }
 
-.galeria{
+.galeria {
     display: grid;
     grid-template-columns: repeat(5,1fr);
     gap: 0.5rem 8.1rem;
 }
 
-.galeria-vacio{
+.galeria-vacio {
     grid-column: 1 / -1;
     padding: 2rem;
     text-align: center;
     font-family: var(--subtitulos);
     font-size: 1.5rem;
     color: #5E566B;
+}
+
+/* SECCION EVENTOS */
+
+.grid_eventos {
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    gap: 1.5rem;
+}
+
+.card_evento {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    min-height: 280px;
+    padding: 1.4rem;
+    overflow: hidden;
+    border-radius: var(--radio);
+    background-position: center;
+    background-size: cover;
+    color: var(--background);
+    transition: transform 0.25s ease;
+}
+
+.card_evento::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(35, 26, 51, 0.95)15%, rgba(154, 47, 216, 0.35));
+    transition: opacity 0.25s ease;
+}
+
+.card_evento > * {
+    position: relative;
+}
+
+.card_evento:hover {
+    transform: translateY(-6px) rotate(-0.5deg);
+}
+
+.card_evento:hover::before {
+    opacity: 0.85;
+}
+
+.evento-1 { background-image: url("../img");}
+.evento-2 { background-image: url("../img");}
+.evento-3 { background-image: url("../img");}
+.evento-4 { background-image: url("../img");}
+.evento-5 { background-image: url("../img");}
+.evento-6 { background-image: url("../img");}
+
+.evento-titulo {
+    font-family: var(--subtitulos);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.1.;
+    color: var(--purple);
+}
+
+.descripcion {
+    font-size: 0.9rem;
+    color: var(--background);
+}
+
+.datos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.2rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid rgba(94, 86, 107, 0.35);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.datos li {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.feather {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+}
+
+/* SECCION CONTACTO */
+
+.contacto {
+    display: flex;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.contacto-info {
+    flex: 4;
+}
+
+.formulario{
+    flex: 6;
+}
+
+.contacto-info h2 {
+    margin-bottom: 1.8rem;
+    font-family: var(--subtitulos);
+    font-size: 1.9rem;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.contacto-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.contacto-data {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.icono {
+    display: flex;
+    padding: 0.7rem;
+    color: var(--blue);
 }
