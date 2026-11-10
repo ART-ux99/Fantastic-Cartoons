@@ -195,3 +195,151 @@ header{
     background-color: var(--pink);
     transform: scale(1.3);
 }
+
+.seccion {
+    max-width: 1200px;
+    padding: 4rem 1.5rem 2rem;
+}
+
+.seccion-titulo{
+    margin-bottom: 2rem;
+    font-family: var(--titulos);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 400;
+}
+
+.scroll-horizontal{
+    position: relative;
+}
+
+.scroll-contenido{
+    display: flex;
+    gap: 1.8rem;
+    overflow-x: auto;
+    padding: 0.5rem 0.5rem 1.5rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--black-violet) transparent;
+}
+
+.scroll-contenido .tarjeta{
+    flex: 0 0 220px;
+}
+
+.scroll-flecha{
+    position: absolute;
+    top: 35%;
+    z-index: 2;
+    display: flex;
+    padding: 0.5rem;
+    border: 2px solid var(--black-violet);
+    border-radius: 50%;
+    background-color: var(--blue-lavender);
+    color: var(--black-violet);
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.scroll-flecha:hover {
+    background-color: var(--pink);
+    color: var(--purple);
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    text-align: center;
+}
+
+.tarjeta-img{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    overflow: hidden;
+    background-color: var(--blue-lavender);
+}
+
+.tarjeta-merch .tarjeta-img{
+    aspect-ratio: 1 / 1;
+}
+
+.tarjeta-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge{
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.15rem 0.7rem;
+    background-color: var(--blue-lavender);
+    color: var(--purple);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.tarjeta-titulo {
+    min-height: 2.5em;
+    font-size: 0.9rem; 
+}
+
+.estado{
+    padding: 0.15rem 1rem;
+    border-radius: 70%;
+    color: var(--background);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.diponible{
+    background-color: var(--purple);
+}
+
+.agotado{
+    background-color: var(--black-violet);
+    color: var(--pink);
+}
+
+.tarjeta-precio{
+    font-size: 1.2rem;
+}
+
+.btn{
+    padding: 0.5rem 1.6rem;
+    border: none;
+    transition: bacckground-color 0.25s ease, color 0.25s ease;
+}
+
+.btn-vermas, .btn-carrito{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: var(--blue-lavender);
+    color: var(--black-violet);
+    transform: skewX(-12deg)
+}
+
+.btn-vermas{
+    background-color: var(--blue);
+    color: var(--background);
+    font-size: 1.1rem;
+}
+
+.btn-vermas:hover{
+    background-color: var(--pink);
+    color: var(--purple);
+}
+
+.btn-carrito:hover{
+    background-color: var(--blue);
+    color: var(--background);
+}
+
+.btn-carrito:disabled{
+    background-color: #D9D4DF;
+    color: #5E566B;
+}
