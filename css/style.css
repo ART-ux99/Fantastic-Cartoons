@@ -342,4 +342,125 @@ header{
 .btn-carrito:disabled{
     background-color: #D9D4DF;
     color: #5E566B;
+    cursor: not-allowed;
+}
+
+.filtros{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 2rem;
+    border-bottom: 3px solid var(--pink);
+}
+
+.filtro_btn{
+    padding: 0.6rem 0.2rem;
+    border: none;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -3px;
+    background: none;
+    color: var(--black-violet);
+    white-space: nowrap;
+    transition: color 0.25s ease, border-color 0.25s ease;
+}
+
+.filtro_btn:hover{
+    color: var(--purple);
+}
+
+.filtro_btn.is-active{
+    color: var(--purple);
+    border-bottom-color: var(--purple);
+}
+
+.filtro-precio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 1.8rem 0 1rem;
+}
+
+.precio-texto{
+    font-weight: 700;
+}
+
+.precio-fila{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.etiqueta{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.rango{
+    position: relative;
+    width: 240px;
+    height: 24px;
+}
+
+.rango-linea{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 5px;
+    transform: translateY(-50%);
+    background-color: var(--blue-lavender);
+    border-radius: 5px;
+}
+
+.rango-relleno{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: var(--purple);
+}
+
+.rango__input{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    margin: 0;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.rango__input::-webkit-slider-thumb {
+    width: 16px;
+    height: 20px;
+    background-color: var(--purple);
+    cursor: grab;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.rango__input::-moz-range-thumb {
+    width: 14px;
+    height: 18px;
+    border-radius: 0;
+    background-color: var(--purple);
+    cursor: grab;
+    pointer-events: auto;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 0.5rem 8.1rem;
+}
+
+.galeria-vacio{
+    grid-column: 1 / -1;
+    padding: 2rem;
+    text-align: center;
+    font-family: var(--subtitulos);
+    font-size: 1.5rem;
+    color: #5E566B;
 }
