@@ -11,37 +11,34 @@
  </head>
  <body>
     <header>
-        <div class="menu_superior">
+        <nav class="menu">
             <a href="#"><img src="media/imagenes/Logo Fantasctic Cartoons.png" alt="Fantastic Cartoons logo"></a>
             <button class="hamburger" type="button">
-                <span class="rayas"></span>
-                <span class="rayas"></span>
-                <span class="rayas"></span>
+                <span class="abrir"><i data-feather="menu"></i></span>
+                <span class="cerrar"><i data-feather="x"></i></span>
             </button>
-            <nav class="menu">
-                <ul class="nav-list">
-                    <li>
-                        <a class="nav-link" href="#novedades">Novedades</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#catalogo">Catalogo general</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#eventos">Eventos</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#merchandaising">Merchandaising</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+           <ul class="nav-list">
+                <li>
+                    <a class="nav-link" href="#novedades">Novedades</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#catalogo">Catalogo general</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#eventos">Eventos</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#merchandaising">Merchandaising</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
         <form action="#" class="buscador">
             <i data-feather="search"></i>
             <input type="search" class="busquedas" placeholder="Busca aquí tu comic ideal">
-            <button type="submit" class="buscar_btn">+</button>
+            <button type="submit" class="buscar_btn"><i data-feather="plus"></i></button>
         </form>
     </header>
     <main>
@@ -50,104 +47,38 @@
                 <img class="slide" src="https://picsum.photos/seed/dwa-slide-1/1200/675" alt="Imagen de ejemplo 1">
                 <img class="slide" src="https://picsum.photos/seed/dwa-slide-2/1200/675" alt="Imagen de ejemplo 2">
                 <img class="slide" src="https://picsum.photos/seed/dwa-slide-3/1200/675" alt="Imagen de ejemplo 3">
-                <img class="slide" src="https://picsum.photos/seed/dwa-slide-4/1200/675" alt="Imagen de ejemplo 4">
           </div>
-         <div class="slideshow__controles">
-             <button class="punto is-active" type="button"></button>
-             <button class="punto" type="button"></button>
-             <button class="punto" type="button"></button>
+            <div class="slideshow__controles">
+                <button class="punto is-active" type="button"></button>
+                <button class="punto" type="button"></button>
+                <button class="punto" type="button"></button>
             </div>
         </section>
 
         <section id="novedades">
             <h1>Novedades</h1>
-            <div class="carrusel_nov">
-                <div class="card-item">
-                    <figure><img src="media/imagenes/Terror 1.webp" alt="locke_&_key_al_infierno"></figure>
-                    <p>Locke & Key al infierno.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <button class="mas-info" type="button">Ver más</button>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">16,40 €</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <figure><img src="media/imagenes/Accion 1.jpg" alt="superman_en_krypton"></figure>
-                    <p>Superman en el planeta Krypton.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <button class="mas-info" type="button">Ver más</button>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">15,50 €</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <figure><img src="media/imagenes/Manga 1.jpeg" alt="bluer_than_love_vol_4"></figure>
-                    <p>Bluer Than Love. Volumen 4.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <button class="mas-info" type="button">Ver más</button>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">17,80 €</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <figure><img src="media/imagenes/Europeo 1.jpg" alt="los_rios_del_pasado"></figure>
-                    <p>Los rios del pasado.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <button class="mas-info" type="button">Ver más</button>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">10,40 €</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <figure><img src="media/imagenes/Manga 2.jpg" alt="la_boda_de_las_luciernagas_vol_11"></figure>
-                    <p>La boda de las Luciernagas. Volumen 11. </p>
-                    <span class="estado">DISPONIBLE</span>
-                    <button class="mas-info" type="button">Ver más</button>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">20,30 €</p>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <figure><img src="media/imagenes/Terror 2.jpg" alt="halloween_the_game_comic"></figure>
-                    <p>Halloween, the game comic.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <button class="mas-info" type="button">Ver más</button>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">18,90 €</p>
-                    </div>
-                </div>
+            <div class="scroll-horizontal">
+                 <button type="button" class="scroll-flecha">
+                    <i data-feather="chevron-left"></i>
+                </button>
+                <div class="scroll-contenido" id="merch-contenido"></div>
+                <button type="button" class="scroll-flecha">
+                    <i data-feather="chevron-right"></i>
+                </button>
             </div>
         </section>
 
         <section id="catalogo">
             <h1>Catalogo general</h1>
             <div class="filtros">
-                <button class="filtro_btn" type="button" data-filtro="todos">Todos</button>
+                <button class="filtro_btn is-active" type="button" data-filtro="todos">Todos</button>
                 <button class="filtro_btn" type="button" data-filtro="europeo">Europeo</button>
                 <button class="filtro_btn" type="button" data-filtro="manga">Manga</button>
                 <button class="filtro_btn" type="button" data-filtro="superheroes">Superheroes/Acción</button>
                 <button class="filtro_btn" type="button" data-filtro="terror">Terror</button>
             </div>
             <div class="filtro-precio">
-                <p class="precio-texto">3.00€ - 20.00€</p>
+                <p class="precio-texto">7.00€ - 30.00€</p>
                 <div class="precio-fila">
                     <span class="etiqueta">Precio:</span>
                     <div class="rango">
@@ -161,218 +92,9 @@
                     </div>
                 </div>
             </div>
-            <div class="galeria">
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Manga 3.jpg" alt="la_gran_guia_del_manga">
-                    </figure>
-                    <p>La Gran guía del manga.</p>
-                    <span class="agotado">AGOTADO</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">6,50 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Europeo 2.png" alt="ekho">
-                    </figure>
-                    <p>Ekho, mundo espejo.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">6,70 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Accion 2.jpg" alt="the_union">
-                    </figure>
-                    <p>The Union.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,00 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Terror 3.jpg" alt="creepshow_game_over">
-                    </figure>
-                    <p>Creepshow.Game over.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,00 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Europeo 3.jpg" alt="luna_de_miel">
-                    </figure>
-                    <p>Luna de miel.</p>
-                    <span class="agotado">AGOTADO</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,00 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Accion 3.webp" alt="el_ultimo_detective">
-                    </figure>
-                    <p>El ultimo detective.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,10 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Manga 4.jpg" alt="beatiful_things">
-                    </figure>
-                    <p>Beatiful things.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,10 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Terror 4.webp" alt="the_plot">
-                    </figure>
-                    <p>The Plot.</p>
-                    <span class="agotado">AGOTADO</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,20 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Manga 5.webp" alt="after_midnight_skin_vol_6">
-                    </figure>
-                    <p>After Midnight Skin. Volumen 6.</p>
-                    <span class="agotado">AGOTADO</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,30 €</p>
-                    </div>
-                </article>
-                  </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Europeo 4.jpg" alt="un_oscuro_manto">
-                    </figure>
-                    <p>Un oscuro manto.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,30 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Acción 4.jpg" alt="los_campeones">
-                    </figure>
-                    <p>Los campeones.</p>
-                    <span class="agotado">AGOTADO</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,50 €</p>
-                    </div>
-                </article>
-                 <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Manga 6.jpg" alt="explosion_juvenil_vol_2">
-                    </figure>
-                    <p>Explosión juvenil. Volumen 2.</p>
-                    <span class="agotado">AGOTADO</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,50 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Terror 5.webp" alt="los_muertos_vivientes">
-                    </figure>
-                    <p>Los muertos vivientes.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,50 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Accion 5.jpg" alt="big_game">
-                    </figure>
-                    <p>Big Game.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,50 €</p>
-                    </div>
-                </article>
-                <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Europeo 5.jpg" alt="soy_su_silencio">
-                    </figure>
-                    <p>Soy su silencio.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,60 €</p>
-                    </div>
-                </article>
-                 <article class="catalogo_item">
-                    <figure>
-                        <img src="media/imagenes/Terror 6.jpg" alt="la_noche_del_gul">
-                    </figure>
-                    <p>La noche del Gul.</p>
-                    <span class="estado">DISPONIBLE</span>
-                    <div class="compra">
-                        <button class="comprar" type="button">
-                            <i data-feather="shopping-cart"></i>
-                        </button>
-                        <p class="precio">7,60 €</p>
-                    </div>
-                </article>
-            </div>
+            <div class="galeria"></div>    
         </section>
+
         <section id="eventos">
             <h1>Eventos</h1>
             <div class="grid_eventos">
@@ -533,6 +255,19 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-caja">
+            <button type="button" class="modal-cerrar"><i data-feather="x"></i></button>
+            <div class="modal-texto">
+                <h2 class="modal-principal">Sinopsis</h2>
+                <h3 class="modal-titulo">Titulo</h3>
+                <p class="modal-autor">Autor</p>
+                <p class="modal-sinopsis">Descripción sinopsis</p>
+            </div>
+        </div>
+    </div>
+
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
         feather.replace();
