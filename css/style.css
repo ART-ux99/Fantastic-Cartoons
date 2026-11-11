@@ -668,16 +668,125 @@ header {
 }
 
 .btn-archivo {
-    padding: 0.35rem;
+    padding: 0.35rem 1rem;
     border-radius: 50%;
     background-color: var(--pink);
     color: var(--black-violet);
     font-size: 0.85rem;
-    font-weight: 700;
     cursor: pointer;
 }
 
 .btn-archivo:hover {
+    background-color: var(--black-violet);
+    color: var(--background);
+}
+
+.nombre-archivo {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #5E566B;
+    font-size: 0.85rem;
+}
+
+.opcional {
+    padding-right: 0.6rem;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+}
+
+.btn-enviar,
+.btn-borrar {
+    min-width: 140px;
+}
+
+.btn-enviar{
     background-color: var(--purple);
     color: var(--background);
+}
+
+.btn-enviar:hover {
+    background-color: var(--background);
+    color: var(--black-violet);
+}
+
+.btn-borrar {
+    background-color: var(--pink);
+    color: var(--purple);
+}
+
+.btn-borrar:hover {
+    background-color: var(--black-violet);
+    color: var(--background);
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 3rem;
+    padding: 3rem 1.5rem 1.5rem;
+    background: 
+     linear-gradient(rgba(35, 26, 51, 0.82), rgba(35, 26, 51, 0.82)),
+     url("../img") center/cover;
+    color: var(--background);
+}
+
+.contenido {
+    display: flex;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.secciones {
+    flex: 6;
+}
+
+.footer-contacto {
+    flex: 4;
+}
+
+.contenido h3 {
+    margin-bottom: 1rem;
+    font-family: var(--subtitulos);
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    color: var(--blue-lavender);
+}
+
+.footer-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.7rem 2rem;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.footer-contacto .footer-lista {
+    grid-template-columns: 1fr;
+    text-transform: none;
+}
+
+.footer-contacto .footer-lista li {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.footer-lista a:hover {
+    color: var(--pink);
+}
+
+/* VENTANA MODAL */
+
+.modal {
+    display: none;
 }
