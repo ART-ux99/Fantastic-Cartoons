@@ -573,6 +573,12 @@ header {
 
 .formulario{
     flex: 6;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 24px;
+    background-color: var(--blue-lavender);
 }
 
 .contacto-info h2 {
@@ -599,4 +605,79 @@ header {
     display: flex;
     padding: 0.7rem;
     color: var(--blue);
+}
+
+.formulario h2 {
+    font-family: var(--subtitulos);
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-item {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    align-items: center;
+    gap: 0.3rem 1rem;
+}
+
+.form-label {
+    font-size: 0.95rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 0.6rem 1.1rem;
+    border: 2px solid transparent;
+    border-radius: var(--radio);
+    background-color: var(--background);
+    color: var(--black-violet);
+    outline: none;
+    transition: border-color var(--transicion);
+}
+
+.form-input:focus{
+    border-color: var(--purple);
+}
+
+.text-area {
+    border-radius: var(--radio);
+    resize: vertical;
+}
+
+.form-input.is-error {
+    border-color: #D7263D;
+}
+
+.form-error {
+    display: none;
+    grid-column: 2;
+    color: #D7263D;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.form-archivo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.3rem 0.4rem;
+    border-radius: 50%;
+    background-color: var(--background);
+}
+
+.btn-archivo {
+    padding: 0.35rem;
+    border-radius: 50%;
+    background-color: var(--pink);
+    color: var(--black-violet);
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-archivo:hover {
+    background-color: var(--purple);
+    color: var(--background);
 }
