@@ -529,7 +529,7 @@ header {
     font-family: var(--subtitulos);
     font-size: 2rem;
     font-weight: 400;
-    line-height: 1.1.;
+    line-height: 1.1;
     color: var(--purple);
 }
 
@@ -989,4 +989,79 @@ footer {
         align-items: center;
         padding: 2.5rem 1.3rem 1.5rem;
     }
+}
+
+/* Movil */
+
+@media (max-width: 488px) {
+    .filtros {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.6rem;
+        border-bottom: none;
+    } 
+
+    .filtro_btn {
+        padding: 0.45rem 1.1rem;
+        border-radius: 50%;
+    } 
+
+    .contenido {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 330px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-titulo {
+        font-size: 1.3rem !important;
+    }
+
+    .evento-titulo {
+        font-size: 1.3rem;
+    }
+
+    .datos li {
+        font-size: 0.5rem;
+    }
+
+    .descripcion {
+        font-size: 0.7rem;
+    }
+
+    .contacto-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .contacto-data {
+        font-size: 0.7rem;   
+    }
+
+    .formulario h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-label {
+        font-size: 0.75rem;
+    }
+
+    .form-input {
+        font-size: 0.8rem;
+    }
+
+    .form-archivo {
+        font-size: 0.7rem;
+    }
+
+    .nombre-archivo {
+        font-size: 0.65rem;
+    }
+
+    .btn-archivo {
+        font-size: 0.6rem;
+    }
+
 }
