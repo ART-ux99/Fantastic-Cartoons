@@ -205,6 +205,7 @@ header {
 .seccion {
     max-width: 1200px;
     padding: 4rem 1.5rem 2rem;
+    margin: 0 auto;
 }
 
 .seccion-titulo {
@@ -477,7 +478,7 @@ header {
 
 .grid_eventos {
     display: grid;
-    grid-template-columns: repeat (3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
@@ -587,6 +588,7 @@ header {
     font-size: 1.9rem;
     line-height: 1.1;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .contacto-lista {
@@ -612,6 +614,7 @@ header {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .form-item {
