@@ -1,7 +1,7 @@
 console.log("ayuda");
 var novedades = [
     {
-        titulo: "Locke y Key al infierno.",
+        titulo: "Locke & Key al infierno.",
         autor: "Joe Hill(guion)/ Grabriel Rodriguez(ilustraciones)",
         precio: 15.50,
         disponible: true,
@@ -25,7 +25,7 @@ var novedades = [
         disponible: true,
         novedad: true,
         imagen: "../media/imagenes/Manga/ 1.jpeg",
-        sinopsis: "Los clubes de literatura del Instituto Ichinomiya y del Instituto Futaba se unen para redactar una revista conjunta. Sakura, una joven estudiante que forma paarte de esto va siempre acompañada de su amiga Takamine, quien acaba animandose a escribir debido a que le ayuda a expresar lo que siente. A medida que transcurre el tiempo Sakura y Takamine empezarán a convertirse en algo más que amigas " 
+        sinopsis: "Los clubes de literatura del Instituto Ichinomiya y del Instituto Futaba se unen para redactar una revista conjunta. Sakura, una joven estudiante que forma parte de esto va siempre acompañada de su amiga Takamine, quien acaba animandose a escribir debido a que le ayuda a expresar lo que siente. A medida que transcurre el tiempo Sakura y Takamine empezarán a convertirse en algo más que amigas." 
     },
     {
         titulo: "Los rios del pasado.",
@@ -34,7 +34,7 @@ var novedades = [
         disponible: true,
         novedad: true,
         imagen: "../media/imagenes/Europeo/ 1.jpg",
-        sinopsis: "Sinopsis"
+        sinopsis: "Linn, una joven y escurridiza ladrona de guante blanco en París recibe el encargo de un hombre misterioso para robar un valioso medallón egipcio vinculado al Dios Atón del que supuestamente no existe ninguna imagen previa. Tras cumplir dicho encargo con facilidad su camino se cruzará con el de Lamia, una misteriosa arqueologa que también anda tras dicha pieza."
     },
     {
         titulo: "La boda de las luciernagas. Volumen 11.",
@@ -43,7 +43,7 @@ var novedades = [
         disponible: false,
         novedad: true,
         imagen: "../media/imagenes/Manga/ 2.jpg",
-        sinopsis: "Sinopsis"
+        sinopsis: "Shinpei permanece recluido en el calabozo subterraneo de la residencia Okumura consumido y cegado por los celos debatiendo su mente entre la razón y el deseo de posesión. Mientras tanto, Satoko intenta seguir adelante con los planes de su compromiso junto a Misharu manteniendo la calma a pesar de la tensión y los sentimintos encontrados...pero ¿podrá conseguir ser feliz con su amado frente a los celos de Shinpei?"
     },
     {
         titulo: "Halloween.The Game Comic.",
@@ -52,7 +52,7 @@ var novedades = [
         disponible: true,
         novedad: true,
         imagen: "../media/imagenes/Terror/ 2.jpg",
-        sinopsis: "Sinopsis"
+        sinopsis: "Una interesante retrospectiva de la historia de Michael Mayers que se situa en el 30 de octubre de 1978, la noche en que comenzó todo."
     }
     
  ];
