@@ -865,7 +865,6 @@ footer {
 
     .filtros {
         padding: 0;
-        overflow-x: auto;
     }
 
     .galeria {
@@ -926,5 +925,68 @@ footer {
 
     .seccion {
         padding-top: 3rem;
+    }
+
+    .scroll-flecha {
+        display: none;
+    }
+
+    .scroll-contenido .tarjeta {
+        flex-basis: 170px;
+    }
+
+    .filtros {
+        justify-content: space-evenly;
+        gap: 1.5rem;
+    }
+
+    .precio-fila {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 1rem;
+    }
+
+    .btn-vermas, .btn-carrito {
+        width: 90%;
+    }
+
+    .grid_eventos {
+        grid-template-columns: 1fr;
+    }
+
+    .card_evento {
+        min-height: 240px;
+    }
+
+    .contacto {
+        flex-direction: column;
+    }
+
+    .formulario {
+        width: 100%;
+        padding: 1.4rem;
+    }
+
+    .form-btn {
+        gap: 1rem;
+    }
+
+    .btn-enviar, .btn-borrar {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .footer-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-caja {
+        flex-direction: column;
+        align-items: center;
+        padding: 2.5rem 1.3rem 1.5rem;
     }
 }
