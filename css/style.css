@@ -518,19 +518,19 @@ header {
     opacity: 0.85;
 }
 
-.evento-1 { background-image: url("../img");}
-.evento-2 { background-image: url("../img");}
-.evento-3 { background-image: url("../img");}
-.evento-4 { background-image: url("../img");}
-.evento-5 { background-image: url("../img");}
-.evento-6 { background-image: url("../img");}
+.evento-1 { background-image: url("../media/imagenes/Evento\ 1.jpeg");}
+.evento-2 { background-image: url("../media/imagenes/Evento\ 2.jpg");}
+.evento-3 { background-image: url("../media/imagenes/Evento\ 3.jpg");}
+.evento-4 { background-image: url("../media/imagenes/Evento\ 4.jpg");}
+.evento-5 { background-image: url("../media/imagenes/Evento\ 5.jpg");}
+.evento-6 { background-image: url("../media/imagenes/Evento\ 6.jpg");}
 
 .evento-titulo {
     font-family: var(--subtitulos);
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.1;
-    color: var(--purple);
+    color: var(--background);
 }
 
 .descripcion {
