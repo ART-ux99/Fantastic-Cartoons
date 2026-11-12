@@ -854,3 +854,77 @@ footer {
     font-size: 0.9rem;
 }
 
+/* MEDIA QUERIES */
+
+/* Laptop pequeña */
+
+@media (max-width: 1024px) {
+    .nav-link {
+        font-size: 1rem;
+    }
+
+    .filtros {
+        padding: 0;
+        overflow-x: auto;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid_eventos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-item {
+        grid-template-columns: 1fr;
+    }
+
+    .form-error {
+        grid-column: 1;
+    }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-logo {
+        margin-right: auto;
+    }
+
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: calc(100% + 0.6rem);
+        left: calc(1.5rem * -1);
+        right: calc(1.5rem * -1);
+        padding: 0.5rem 0 1rem;
+        background-color: var(--black-violet);
+    }
+
+    .nav-list li {
+        display: block;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.9rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .slideshow__controles {
+        bottom: 1.2rem;
+    }
+
+    .seccion {
+        padding-top: 3rem;
+    }
+}
