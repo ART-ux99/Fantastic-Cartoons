@@ -1,57 +1,57 @@
 console.log("ayuda");
 var novedades = [
     {
-        titulo: "Titulo",
-        autor: "Autor",
-        precio: 32,
+        titulo: "Locke y Key al infierno.",
+        autor: "Joe Hill(guion)/ Grabriel Rodriguez(ilustraciones)",
+        precio: 15.50,
         disponible: true,
         novedad: true,
-        imagen: "../media/",
-        sinopsis: "Sinopsis"
+        imagen: "../media/imagenes/Terror/ 1.webp",
+        sinopsis: "Tras la Segunda Guerra Mundial, John Locke, un joven destrozado por la muerte de su madre, se suicida y acaba en el Infierno. Diez años después de su muerte su familia empieza a recibir cartas que parecen ser de el. Decidida a salvarlo, su hermana, Mary Locke, baja al Infierno para encontrar su alma desafiando toda clase de pruebas."
     },
     {   
-        titulo: "Titulo",
-        autor: "Autor",
-        precio: 32,
+        titulo: "Superman en el planeta Krypton.",
+        autor: "John Byrne, Mike Mignola y Jerry Ordway",
+        precio: 16.40,
         disponible: true,
         novedad: true,
-        imagen: "",
+        imagen: "../media/imagenes/Accion/ 1.jpg",
+        sinopsis: "Superman regresa al pasado y a su planeta natal, Krypton, por un error en la linea temporal. Una vez allí descubrirá sus origenes y conocerá a personajes tan importantes como Jor-el, el cintífico que intentó salvar Krypton pero nadie escuchó."
+    },
+    {
+       titulo: "Bluer than love.Volumen 4.",
+        autor: "Kon Fukami",
+        precio: 17.20,
+        disponible: true,
+        novedad: true,
+        imagen: "../media/imagenes/Manga/ 1.jpeg",
+        sinopsis: "Los clubes de literatura del Instituto Ichinomiya y del Instituto Futaba se unen para redactar una revista conjunta. Sakura, una joven estudiante que forma paarte de esto va siempre acompañada de su amiga Takamine, quien acaba animandose a escribir debido a que le ayuda a expresar lo que siente. A medida que transcurre el tiempo Sakura y Takamine empezarán a convertirse en algo más que amigas " 
+    },
+    {
+        titulo: "Los rios del pasado.",
+        autor: "Stephen Desberg(guion) y Yannick Corboz(ilustraciones)",
+        precio: 18.50,
+        disponible: true,
+        novedad: true,
+        imagen: "../media/imagenes/Europeo/ 1.jpg",
         sinopsis: "Sinopsis"
     },
     {
-       titulo: "Titulo",
-        autor: "Autor",
-        precio: 32,
-        disponible: true,
+        titulo: "La boda de las luciernagas. Volumen 11.",
+        autor: "Oreco Tachibana",
+        precio: 19.40,
+        disponible: false,
         novedad: true,
-        imagen: "",
-        sinopsis: "Sinopsis" 
-    },
-    {
-        titulo: "Titulo",
-        autor: "Autor",
-        precio: 32,
-        disponible: true,
-        novedad: true,
-        imagen: "",
+        imagen: "../media/imagenes/Manga/ 2.jpg",
         sinopsis: "Sinopsis"
     },
     {
-        titulo: "Titulo",
-        autor: "Autor",
-        precio: 32,
+        titulo: "Halloween.The Game Comic.",
+        autor: "Alan Moore",
+        precio: 20.00,
         disponible: true,
         novedad: true,
-        imagen: "",
-        sinopsis: "Sinopsis"
-    },
-    {
-        titulo: "Titulo",
-        autor: "Autor",
-        precio: 32,
-        disponible: true,
-        novedad: true,
-        imagen: "",
+        imagen: "../media/imagenes/Terror/ 2.jpg",
         sinopsis: "Sinopsis"
     }
     
@@ -59,154 +59,154 @@ var novedades = [
 
 var catalogo = [
     {
-        titulo: "Titulo",
+        titulo: "La gran guia del manga.",
         tipo: "Manga",
-        precio: 27,
-        disponible: true,
-        img: "../media"
+        precio: 7.00,
+        disponible: false,
+        img: "../media/imagenes/Manga/ 3.jpg"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
+        titulo: "Ekho, mundo espejo.",
+        tipo: "Europeo",
+        precio: 10.30,
         disponible: true,
-        img: "../media"
+        img: "../media/imagenes/Europeo/ 2.png"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
+        titulo: "The Union.",
+        tipo: "Superheroes/Acción",
+        precio: 7.70,
         disponible: true,
-        img: "../media"
+        img: "../media/imagenes/Accion/ 2.jpg"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
+        titulo: "Creepshow. Game over.",
+        tipo: "Terror",
+        precio: 15.20,
         disponible: true,
-        img: "../media"
+        img: "../media/imagenes/Terror/ 3.jpg"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
-        disponible: true,
-        img: "../media"
+        titulo: "Luna de miel.",
+        tipo: "Europeo",
+        precio: 14.80,
+        disponible: false,
+        img: "../media/imagenes/Europeo/ 3.jpg"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
+        titulo: "El ultimo detective.",
+        tipo: "Superheroes/Accion",
+        precio: 16.50,
         disponible: true,
-        img: "../media"
+        img: "../media/imagenes/Accion/ 3.webp"
     },
     {
-        titulo: "Titulo",
+        titulo: "Beatiful things.",
         tipo: "Manga",
-        precio: 27,
+        precio: 19.80,
         disponible: true,
-        img: "../media"
+        img: "../media/imagenes/Manga/ 4.jpg"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
-        disponible: true,
-        img: "../media"
+        titulo: "The Plot.",
+        tipo: "Terror",
+        precio: 10.50,
+        disponible: false,
+        img: "../media/imagenes/Terror/ 4.webp"
     },
     {
-        titulo: "Titulo",
+        titulo: "After Midnight Skin. Volumen 6.",
         tipo: "Manga",
-        precio: 27,
-        disponible: true,
-        img: "../media"
+        precio: 20.00,
+        disponible: false,
+        img: "../media/imagenes/Manga/ 5.webp"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
+        titulo: "Un oscuro manto.",
+        tipo: "Europeo",
+        precio: 27.90,
         disponible: true,
-        img: "../media"
+        img: "../media/imagenes/Europeo/ 4.jpg"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
-        disponible: true,
-        img: "../media"
+        titulo: "Los campeones.",
+        tipo: "Superheroes/Acción",
+        precio: 17.00,
+        disponible: false,
+        img: "../media/imagenes/Accion/ 4.jpg"
     },
     {
-        titulo: "Titulo",
+        titulo: "Explosión juvenil. Volumen 2.",
         tipo: "Manga",
-        precio: 27,
-        disponible: true,
-        img: "../media"
+        precio: 28.00,
+        disponible: false,
+        img: "../media/imagenes/Manga/ 6.jpg"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
+        titulo: "Los muertos vivientes.",
+        tipo: "Terror",
+        precio: 15.40,
         disponible: true,
-        img: "../media"
+        img: "../media/imagenes/Terror/ 5.webp"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
+        titulo: "Soy su silencio.",
+        tipo: "Europeo",
+        precio: 30.00,
         disponible: true,
-        img: "../media"
+        img: "../media/imagenes/Europeo/ 5.jpg"
     },
     {
-        titulo: "Titulo",
-        tipo: "Manga",
-        precio: 27,
+        titulo: "La noche del Gul.",
+        tipo: "Terror",
+        precio: 25.40,
         disponible: true,
-        img: "../media"
+        img: "../media/imagenes/Terror/ 6.jpg"
     },
 ];
 
 var merchandaising = [
     {
-        titulo: "Titulo",
-        precio: 16,
-        disponible: false,
+        titulo: "Taza de Batman.",
+        precio: 3.00,
+        disponible: true,
         novedad: true,
-        imagen: "../media"
+        imagen: "../media/imagenes/Merchandaising/ .jpeg"
     },
     {
-        titulo: "Titulo",
-        precio: 16,
+        titulo: "Llavero de Obelix.",
+        precio: 3.40,
         disponible: false,
         novedad: true,
-        imagen: "../media"
+        imagen: "../media/imagenes/Merchandaising/ 2.jpg"
     },
     {
-        titulo: "Titulo",
-        precio: 16,
-        disponible: false,
+        titulo: "Peluche de Alien.",
+        precio: 15.60,
+        disponible: true,
         novedad: true,
-        imagen: "../media"
+        imagen: "../media/imagenes/Merchandaising/ 3.jpg"
     },
     {
-        titulo: "Titulo",
-        precio: 16,
-        disponible: false,
+        titulo: "Camiseta de Haikyu.",
+        precio: 10.20,
+        disponible: true,
         novedad: true,
-        imagen: "../media"
+        imagen: "../media/imagenes/Merchandaising/ 4.jpg"
     },
     {
-        titulo: "Titulo",
-        precio: 16,
+        titulo: "Figura de Harley Queen y el Joker.",
+        precio: 6.00,
         disponible: false,
         novedad: true,
-        imagen: "../media"
+        imagen: "../media/imagenes/Merchandaising/ 5.jpg"
     },
     {
-        titulo: "Titulo",
-        precio: 16,
+        titulo: "Zapatillas Marvel.",
+        precio: 20.00,
         disponible: false,
         novedad: true,
-        imagen: "../media"
+        imagen: "../media/imagenes/Merchandaising/ 6.jpg"
     },
 ];
 
