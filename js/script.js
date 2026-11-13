@@ -63,105 +63,105 @@ var catalogo = [
         tipo: "manga",
         precio: 7.00,
         disponible: false,
-        img: "media/imagenes/Manga3.jpg"
+        imagen: "media/imagenes/Manga3.jpg"
     },
     {
         titulo: "Ekho, mundo espejo.",
         tipo: "europeo",
         precio: 10.30,
         disponible: true,
-        img: "media/imagenes/Europeo2.png"
+        imagen: "media/imagenes/Europeo2.png"
     },
     {
         titulo: "The Union.",
         tipo: "superheroes",
         precio: 7.70,
         disponible: true,
-        img: "media/imagenes/Accion2.jpg"
+        imagen: "media/imagenes/Accion2.jpg"
     },
     {
         titulo: "Creepshow. Game over.",
         tipo: "terror",
         precio: 15.20,
         disponible: true,
-        img: "media/imagenes/Terror3.jpg"
+        imagen: "media/imagenes/Terror3.jpg"
     },
     {
         titulo: "Luna de miel.",
         tipo: "europeo",
         precio: 14.80,
         disponible: false,
-        img: "media/imagenes/Europeo3.jpg"
+        imagen: "media/imagenes/Europeo3.jpg"
     },
     {
         titulo: "El ultimo detective.",
         tipo: "superheroes",
         precio: 16.50,
         disponible: true,
-        img: "media/imagenes/Accion3.webp"
+        imagen: "media/imagenes/Accion3.webp"
     },
     {
         titulo: "Beatiful things.",
         tipo: "manga",
         precio: 19.80,
         disponible: true,
-        img: "media/imagenes/Manga4.jpg"
+        imagen: "media/imagenes/Manga4.jpg"
     },
     {
         titulo: "The Plot.",
         tipo: "terror",
         precio: 10.50,
         disponible: false,
-        img: "media/imagenes/Terror4.webp"
+        imagen: "media/imagenes/Terror4.webp"
     },
     {
         titulo: "After Midnight Skin. Volumen 6.",
         tipo: "manga",
         precio: 20.00,
         disponible: false,
-        img: "media/imagenes/Manga5.webp"
+        imagen: "media/imagenes/Manga5.webp"
     },
     {
         titulo: "Un oscuro manto.",
         tipo: "europeo",
         precio: 27.90,
         disponible: true,
-        img: "media/imagenes/Europeo4.jpg"
+        imagen: "media/imagenes/Europeo4.jpg"
     },
     {
         titulo: "Los campeones.",
         tipo: "superheroes",
         precio: 17.00,
         disponible: false,
-        img: "media/imagenes/Accion4.jpg"
+        imagen: "media/imagenes/Accion4.jpg"
     },
     {
         titulo: "Explosión juvenil. Volumen 2.",
         tipo: "manga",
         precio: 28.00,
         disponible: false,
-        img: "media/imagenes/Manga6.jpg"
+        imagen: "media/imagenes/Manga6.jpg"
     },
     {
         titulo: "Los muertos vivientes.",
         tipo: "terror",
         precio: 15.40,
         disponible: true,
-        img: "media/imagenes/Terror5.webp"
+        imagen: "media/imagenes/Terror5.webp"
     },
     {
         titulo: "Soy su silencio.",
         tipo: "europeo",
         precio: 30.00,
         disponible: true,
-        img: "media/imagenes/Europeo5.jpg"
+        imagen: "media/imagenes/Europeo5.jpg"
     },
     {
         titulo: "La noche del Gul.",
         tipo: "terror",
         precio: 25.40,
         disponible: true,
-        img: "media/imagenes/Terror6.jpg"
+        imagen: "media/imagenes/Terror6.jpg"
     },
 ];
 
