@@ -6,7 +6,7 @@ var novedades = [
         precio: 15.50,
         disponible: true,
         novedad: true,
-        imagen: "../media/imagenes/Terror1.webp",
+        imagen: "media/imagenes/Terror1.webp",
         sinopsis: "Tras la Segunda Guerra Mundial, John Locke, un joven destrozado por la muerte de su madre, se suicida y acaba en el Infierno. Diez años después de su muerte su familia empieza a recibir cartas que parecen ser de el. Decidida a salvarlo, su hermana, Mary Locke, baja al Infierno para encontrar su alma desafiando toda clase de pruebas."
     },
     {   
@@ -15,7 +15,7 @@ var novedades = [
         precio: 16.40,
         disponible: true,
         novedad: true,
-        imagen: "../media/imagenes/Accion1.jpg",
+        imagen: "media/imagenes/Accion1.jpg",
         sinopsis: "Superman regresa al pasado y a su planeta natal, Krypton, por un error en la linea temporal. Una vez allí descubrirá sus origenes y conocerá a personajes tan importantes como Jor-el, el cintífico que intentó salvar Krypton pero nadie escuchó."
     },
     {
@@ -24,7 +24,7 @@ var novedades = [
         precio: 17.20,
         disponible: true,
         novedad: true,
-        imagen: "../media/imagenes/Manga1.jpeg",
+        imagen: "media/imagenes/Manga1.jpeg",
         sinopsis: "Los clubes de literatura del Instituto Ichinomiya y del Instituto Futaba se unen para redactar una revista conjunta. Sakura, una joven estudiante que forma parte de esto va siempre acompañada de su amiga Takamine, quien acaba animandose a escribir debido a que le ayuda a expresar lo que siente. A medida que transcurre el tiempo Sakura y Takamine empezarán a convertirse en algo más que amigas." 
     },
     {
@@ -33,7 +33,7 @@ var novedades = [
         precio: 18.50,
         disponible: true,
         novedad: true,
-        imagen: "../media/imagenes/Europeo1.jpg",
+        imagen: "media/imagenes/Europeo1.jpg",
         sinopsis: "Linn, una joven y escurridiza ladrona de guante blanco en París recibe el encargo de un hombre misterioso para robar un valioso medallón egipcio vinculado al Dios Atón del que supuestamente no existe ninguna imagen previa. Tras cumplir dicho encargo con facilidad su camino se cruzará con el de Lamia, una misteriosa arqueologa que también anda tras dicha pieza."
     },
     {
@@ -42,7 +42,7 @@ var novedades = [
         precio: 19.40,
         disponible: false,
         novedad: true,
-        imagen: "../media/imagenes/Manga2.jpg",
+        imagen: "media/imagenes/Manga2.jpg",
         sinopsis: "Shinpei permanece recluido en el calabozo subterraneo de la residencia Okumura consumido y cegado por los celos debatiendo su mente entre la razón y el deseo de posesión. Mientras tanto, Satoko intenta seguir adelante con los planes de su compromiso junto a Misharu manteniendo la calma a pesar de la tensión y los sentimintos encontrados...pero ¿podrá conseguir ser feliz con su amado frente a los celos de Shinpei?"
     },
     {
@@ -51,7 +51,7 @@ var novedades = [
         precio: 20.00,
         disponible: true,
         novedad: true,
-        imagen: "../media/imagenes/Terror2.jpg",
+        imagen: "media/imagenes/Terror2.jpg",
         sinopsis: "Una interesante retrospectiva de la historia de Michael Mayers que se situa en el 30 de octubre de 1978, la noche en que comenzó todo."
     }
     
@@ -60,108 +60,108 @@ var novedades = [
 var catalogo = [
     {
         titulo: "La gran guia del manga.",
-        tipo: "Manga",
+        tipo: "manga",
         precio: 7.00,
         disponible: false,
-        img: "../media/imagenes/Manga3.jpg"
+        img: "media/imagenes/Manga3.jpg"
     },
     {
         titulo: "Ekho, mundo espejo.",
-        tipo: "Europeo",
+        tipo: "europeo",
         precio: 10.30,
         disponible: true,
-        img: "../media/imagenes/Europeo2.png"
+        img: "media/imagenes/Europeo2.png"
     },
     {
         titulo: "The Union.",
-        tipo: "Superheroes/Acción",
+        tipo: "superheroes",
         precio: 7.70,
         disponible: true,
-        img: "../media/imagenes/Accion2.jpg"
+        img: "media/imagenes/Accion2.jpg"
     },
     {
         titulo: "Creepshow. Game over.",
-        tipo: "Terror",
+        tipo: "terror",
         precio: 15.20,
         disponible: true,
-        img: "../media/imagenes/Terror3.jpg"
+        img: "media/imagenes/Terror3.jpg"
     },
     {
         titulo: "Luna de miel.",
-        tipo: "Europeo",
+        tipo: "europeo",
         precio: 14.80,
         disponible: false,
-        img: "../media/imagenes/Europeo3.jpg"
+        img: "media/imagenes/Europeo3.jpg"
     },
     {
         titulo: "El ultimo detective.",
-        tipo: "Superheroes/Accion",
+        tipo: "superheroes",
         precio: 16.50,
         disponible: true,
-        img: "../media/imagenes/Accion3.webp"
+        img: "media/imagenes/Accion3.webp"
     },
     {
         titulo: "Beatiful things.",
-        tipo: "Manga",
+        tipo: "manga",
         precio: 19.80,
         disponible: true,
-        img: "../media/imagenes/Manga4.jpg"
+        img: "media/imagenes/Manga4.jpg"
     },
     {
         titulo: "The Plot.",
-        tipo: "Terror",
+        tipo: "terror",
         precio: 10.50,
         disponible: false,
-        img: "../media/imagenes/Terror4.webp"
+        img: "media/imagenes/Terror4.webp"
     },
     {
         titulo: "After Midnight Skin. Volumen 6.",
-        tipo: "Manga",
+        tipo: "manga",
         precio: 20.00,
         disponible: false,
-        img: "../media/imagenes/Manga5.webp"
+        img: "media/imagenes/Manga5.webp"
     },
     {
         titulo: "Un oscuro manto.",
-        tipo: "Europeo",
+        tipo: "europeo",
         precio: 27.90,
         disponible: true,
-        img: "../media/imagenes/Europeo4.jpg"
+        img: "media/imagenes/Europeo4.jpg"
     },
     {
         titulo: "Los campeones.",
-        tipo: "Superheroes/Acción",
+        tipo: "superheroes",
         precio: 17.00,
         disponible: false,
-        img: "../media/imagenes/Accion4.jpg"
+        img: "media/imagenes/Accion4.jpg"
     },
     {
         titulo: "Explosión juvenil. Volumen 2.",
-        tipo: "Manga",
+        tipo: "manga",
         precio: 28.00,
         disponible: false,
-        img: "../media/imagenes/Manga6.jpg"
+        img: "media/imagenes/Manga6.jpg"
     },
     {
         titulo: "Los muertos vivientes.",
-        tipo: "Terror",
+        tipo: "terror",
         precio: 15.40,
         disponible: true,
-        img: "../media/imagenes/Terror5.webp"
+        img: "media/imagenes/Terror5.webp"
     },
     {
         titulo: "Soy su silencio.",
-        tipo: "Europeo",
+        tipo: "europeo",
         precio: 30.00,
         disponible: true,
-        img: "../media/imagenes/Europeo5.jpg"
+        img: "media/imagenes/Europeo5.jpg"
     },
     {
         titulo: "La noche del Gul.",
-        tipo: "Terror",
+        tipo: "terror",
         precio: 25.40,
         disponible: true,
-        img: "../media/imagenes/Terror6.jpg"
+        img: "media/imagenes/Terror6.jpg"
     },
 ];
 
@@ -171,42 +171,42 @@ var merchandaising = [
         precio: 3.00,
         disponible: true,
         novedad: true,
-        imagen: "../media/imagenes/Merchandaising.jpeg"
+        imagen: "media/imagenes/Merchandaising.jpeg"
     },
     {
         titulo: "Llavero de Obelix.",
         precio: 3.40,
         disponible: false,
         novedad: true,
-        imagen: "../media/imagenes/Merchandaising2.jpg"
+        imagen: "media/imagenes/Merchandising2.jpg"
     },
     {
         titulo: "Peluche de Alien.",
         precio: 15.60,
         disponible: true,
         novedad: true,
-        imagen: "../media/imagenes/Merchandaising3.jpg"
+        imagen: "media/imagenes/Merchandising3.jpg"
     },
     {
         titulo: "Camiseta de Haikyu.",
         precio: 10.20,
         disponible: true,
         novedad: true,
-        imagen: "../media/imagenes/Merchandaising4.jpg"
+        imagen: "media/imagenes/Merchandaising4.jpg"
     },
     {
         titulo: "Figura de Harley Queen y el Joker.",
         precio: 6.00,
         disponible: false,
         novedad: true,
-        imagen: "../media/imagenes/Merchandaising5.jpg"
+        imagen: "media/imagenes/Merchandaising5.jpg"
     },
     {
         titulo: "Zapatillas Marvel.",
         precio: 20.00,
         disponible: false,
         novedad: true,
-        imagen: "../media/imagenes/Merchandaising6.jpg"
+        imagen: "media/imagenes/Merchandaising6.jpg"
     },
 ];
 
@@ -290,7 +290,7 @@ var filtros = document.querySelectorAll(".filtro_btn");
 
 for(var k = 0; k < filtros.length; k++) {
     filtros[k].addEventListener("click", function() {
-        filtroActivo = this.getAtributte("data-filtro");
+        filtroActivo = this.getAttribute("data-filtro");
         for(var j = 0; j < filtros.length; j++) {
             filtros [j].classList.remove("is-active");
         }
@@ -306,7 +306,7 @@ var buscadorInput = document.querySelector(".busquedas");
 
 buscador.addEventListener("submit", function(evento) {
     evento.preventDefault();
-    textoBusqueda = buscadorInput.ariaValueMax.trim().toLowerCase();
+    textoBusqueda = buscadorInput.value.trim().toLowerCase();
     pintarCatalogo();
     document.querySelector("#catalogo").scrollIntoView();
 });
@@ -327,7 +327,7 @@ function pintarMerch() {
     for(var i = 0; i < merchandaising.length; i++) {
         var producto = merchandaising[i];
         if(producto.precio >= merchMin && producto.precio <= merchMax) {
-            html += crearTarjeta(producto, y, false, "tarjeta-merch");
+            html += crearTarjeta(producto, i, false, "tarjeta-merch");
         }
     }
 
