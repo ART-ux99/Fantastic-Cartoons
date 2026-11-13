@@ -254,4 +254,87 @@ function pintarNovedades() {
         html += crearTarjeta(novedades[i], i, true, "");
     }
     document.querySelector("#nov-contenido").innerHTML = html;
+    feather.replace();
 };
+
+//FILTROS CATALOGO
+
+var filtroActivo = "todos";
+var catalogoMin = 0;
+var catalogoMax= 100;
+var textoBusqueda = "";
+
+function pintarCatalogo() {
+    var html = "";
+    for(var i = 0; i < catalogo.length; i++) {
+        var comic = catalogo[i];
+        var cumpleTipo = filtroActivo === "todos" || comic.tipo === filtroActivo;
+        var cumplePrecio = comic.precio >= catalogoMin && comic.precio <= catalogoMax;
+        var cumpleTexto = comic.titulo.toLowerCase().indexOf(textoBusqueda) !== -1;
+
+        if(cumpleTipo && cumplePrecio && cumpleTexto) {
+            html += crearTarjeta(comic, i, false, "");
+        }
+    };
+
+    if(html === "") {
+        html = '<p class="galeria-vacio">¡Ups! No hay cómics con estos filtros.</p>';
+    };
+
+    document.querySelector("#catalogo .galeria").innerHTML = html;
+    feather.replace();
+
+};
+
+var filtros = document.querySelectorAll(".filtro_btn");
+
+for(var k = 0; k < filtros.length; k++) {
+    filtros[k].addEventListener("click", function() {
+        filtroActivo = this.getAtributte("data-filtro");
+        for(var j = 0; j < filtros.length; j++) {
+            filtros [j].classList.remove("is-active");
+        }
+        this.classList.add("is-active");
+        pintarCatalogo();
+    });
+};
+
+//BUSCADOR
+
+var buscador = document.querySelector(".buscador");
+var buscadorInput = document.querySelector(".busquedas");
+
+buscador.addEventListener("submit", function(evento) {
+    evento.preventDefault();
+    textoBusqueda = buscadorInput.ariaValueMax.trim().toLowerCase();
+    pintarCatalogo();
+    document.querySelector("#catalogo").scrollIntoView();
+});
+
+buscadorInput.addEventListener("input", function() {
+    if(this.value === "") {
+        textoBusqueda = "";
+        pintarCatalogo();
+    }
+});
+
+//FILTRO PRECIO
+
+var merchMin = 0;
+var merchMax = 100;
+function pintarMerch() {
+    var html = "";
+    for(var i = 0; i < merchandaising.length; i++) {
+        var producto = merchandaising[i];
+        if(producto.precio >= merchMin && producto.precio <= merchMax) {
+            html += crearTarjeta(producto, y, false, "tarjeta-merch");
+        }
+    }
+
+    if (html === "") {
+        html = '<p class="galeria-vacio">No hay productos en este rango de precio.</p>';
+    }
+
+    document.querySelector("#merch-contenido").innerHTML = html;
+    feather.replace();
+}
