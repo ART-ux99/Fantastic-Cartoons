@@ -338,3 +338,75 @@ function pintarMerch() {
     document.querySelector("#merch-contenido").innerHTML = html;
     feather.replace();
 }
+
+function prepararRango(idSeccion, productos, alCambiar){
+    var seccion = document.getElementById(idSeccion);
+    var inputs = seccion.querySelectorAll(".rango__input");
+    var inputMin = inputs[0];
+    var inputMax = inputs[1];
+    var relleno = seccion.querySelector(".rango-relleno");
+    var texto = seccion.querySelector(".precio-texto");
+    var limiteMin = productos[0].precio;
+    var limiteMax = productos[0].precio;
+
+    for(var i = 1; i < productos.length; i++) {
+        if(productos[i].precio < limiteMin) {
+            limiteMin = productos[i].precio;
+        }
+        if(productos[i].precio > limiteMax) {
+            limiteMax = productos[i].precio;
+        }
+    }
+
+    limiteMin = Math.floor(limiteMin);
+    limiteMax = Math.ceil(limiteMax);
+
+    var total = limiteMax -limiteMin;
+    inputMin.min = limiteMin;
+    inputMin.max = limiteMax;
+    inputMin.value = limiteMin;
+    inputMax.min = limiteMin;
+    inputMax.max = limiteMax;
+    inputMax.value = limiteMax;
+
+    function actualizar(evento) {
+        varMin = parseFloat(inputMin.value);
+        varMax = parseFloat(inputMax.value);
+        if(min > max) {
+            if(evento && evento.target === inputMin) {
+                min = max;
+                inputMin.value = min;
+            } else {
+                max = min;
+                inputMax.value = max;
+            }
+        }
+        inputMin.style.zIndex = (min > limiteMax - total * 0.1)? "2" : "1";
+
+        var desde = (min - limiteMin) / total * 100;
+        var hasta = (max - limiteMin) / total * 100;
+        relleno.style.left = desde + "%";
+        relleno.style.width = (hasta - desde) + "%";
+        texto.textContent = formatoPrecio(min) + "-" + formatoPrecio(max);
+
+        alCambiar(min, max);
+    }
+    inputMin.addEventListener("input", actualizar);
+    inputMax.addEventListener("input", actualizar);
+
+    actualizar();
+}
+
+prepararRango("catalogo", catalogo, function (min, max) {
+    catalogoMin = min;
+    catalogoMax = max;
+    pintarCatalogo();
+});
+
+prepararRango("merchandaising", merchandaising, function (min, max) {
+    merchMin = min;
+    merchMax = max;
+    pintarMerch();
+});
+
+pintarNovedades();
