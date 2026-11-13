@@ -370,8 +370,8 @@ function prepararRango(idSeccion, productos, alCambiar){
     inputMax.value = limiteMax;
 
     function actualizar(evento) {
-        varMin = parseFloat(inputMin.value);
-        varMax = parseFloat(inputMax.value);
+        var min = parseFloat(inputMin.value);
+        var max = parseFloat(inputMax.value);
         if(min > max) {
             if(evento && evento.target === inputMin) {
                 min = max;
