@@ -1,3 +1,5 @@
+//JAVA SCRIPT VAINILLA
+
 console.log("ayuda");
 var novedades = [
     {
@@ -177,7 +179,7 @@ var merchandaising = [
         titulo: "Llavero de Obelix.",
         precio: 3.40,
         disponible: false,
-        novedad: true,
+        novedad: false,
         imagen: "media/imagenes/Merchandising2.jpg"
     },
     {
@@ -191,7 +193,7 @@ var merchandaising = [
         titulo: "Camiseta de Haikyu.",
         precio: 10.20,
         disponible: true,
-        novedad: true,
+        novedad: false,
         imagen: "media/imagenes/Merchandaising4.jpg"
     },
     {
@@ -205,7 +207,7 @@ var merchandaising = [
         titulo: "Zapatillas Marvel.",
         precio: 20.00,
         disponible: false,
-        novedad: true,
+        novedad: false,
         imagen: "media/imagenes/Merchandaising6.jpg"
     },
 ];
@@ -410,3 +412,73 @@ prepararRango("merchandaising", merchandaising, function (min, max) {
 });
 
 pintarNovedades();
+
+//JQUERY
+
+$ (function() {
+
+    //Menu hamburguesa
+    var $hamburguesa = $(".hamburger");
+    var $menu = $(".nav-list");
+
+    function esPantallaPequena() {
+        return window.matchMedia("(max-width: 768px)").matches;
+    }
+
+    $hamburguesa.on("click", function() {
+        $menu.stop().slideToggle(300);
+        $(this).toggleClass("is-abierto");
+    })
+
+    $(".nav-link").on("click", function() {
+        if (esPantallaPequena()) {
+            $menu.slideUp(300);
+            $hamburguesa.removeClass("is-abierto");
+        }
+    });
+
+    $(window).on("resize", function() {
+        if(!esPantallaPequena()) {
+            $menu.removeAttr("style");
+            $hamburguesa.removeClass("is-abierto");
+        }
+    });
+
+    //Carrusel HERO
+
+    var $slides = $(".slide");
+    var $puntos = $(".punto");
+    var slideActual = 0;
+    var intervalo;
+
+    function mostrarSlide(nuevo) {
+        if(nuevo === slideActual) {
+            return;
+        }
+        $slides.eq(slideActual).fadeOut(800);
+        $slides.eq(nuevo).fadeIn(800);
+
+        $puntos.removeClass("is-active");
+        $puntos.eq(nuevo).addClass("is-active");
+
+        slideActual = nuevo;
+    }
+
+    function siguienteSlide() {
+        mostrarSlide((slideActual + 1) % $slides.length);
+    }
+
+    function iniciarCarrusel() {
+        intervalo = setInterval(siguienteSlide, 4500);
+    }
+
+    $puntos.on("click", function() {
+        clearInterval(intervalo);
+        mostrarSlide($(this).index());
+        iniciarCarrusel();
+    });
+
+    iniciarCarrusel();
+
+    //Ventana modal
+})
