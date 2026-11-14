@@ -15,7 +15,7 @@ var novedades = [
         titulo: "Superman en el planeta Krypton.",
         autor: "John Byrne, Mike Mignola y Jerry Ordway",
         precio: 16.40,
-        disponible: true,
+        disponible: false,
         novedad: true,
         imagen: "media/imagenes/Accion1.jpg",
         sinopsis: "Superman regresa al pasado y a su planeta natal, Krypton, por un error en la linea temporal. Una vez allí descubrirá sus origenes y conocerá a personajes tan importantes como Jor-el, el cintífico que intentó salvar Krypton pero nadie escuchó."
