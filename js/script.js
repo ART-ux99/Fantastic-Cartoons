@@ -481,4 +481,118 @@ $ (function() {
     iniciarCarrusel();
 
     //Ventana modal
-})
+    $(document).on("click", ".btn-vermas", function() {
+        var comic = novedades[$(this).data("indice")];
+
+        $(".modal-titulo").text(comic.titulo);
+        $(".modal-autor").text(comic.autor);
+        $(".modal-sinopsis").text(comic.sinopsis);
+
+        $("#modal").fadeIn(300);
+        $("body").addClass("sin-scroll");
+    });
+
+    function cerrarModal() {
+        $("#modal").fadeOut(300);
+        $("body").removeClass("sin-scroll");
+    }
+
+    $(".modal-cerrar").on("click", cerrarModal);
+
+    $("#modal").on("click", function(evento) {
+        if(evento.target === this) {
+            cerrarModal()
+        }
+    });
+
+    $(document).on("keydown", function(evento) {
+        if(evento.key === "Escape") {
+            cerrarModal();
+        }
+    });
+
+    //Flechas scroll
+    $(".scroll-flecha").on("click", function() {
+        var $contenido = $(this).siblings(".scroll-contenido");
+        var direccion = $(this).is(":first-child") ? -1: 1;
+        var desplazamiento = $contenido.innerWidth() * 0.8 * direccion;
+
+        $contenido.stop().animate({scrollLeft: $contenido.scrollLeft() + desplazamiento}, 500);
+    });
+
+    //Validacion Forms
+    var $formulario = $(".formulario");
+
+    var $exito = $('<p class="form-exito" role="status></p>').hide();
+    $formulario.append($exito);
+
+    function mostrarError(idCampo, mensaje) {
+        $("#" + idCampo).addClass("is-error");
+        $("#error-" + idCampo).text(mensaje).slideDown(200);
+    }
+
+    function limpiarErrores() {
+        $formulario.find("is-error").removeClass("is.-error");
+        $formulario.find(".form-error").slideUp(200);
+    }
+
+    $("#archivo").on("change", function() {
+        var nombre = this.files.length > 0 ? this.files[0].name : "Ningún archivo";
+        $(".nombre-archivo").text(nombre);
+    });
+
+    $formulario.on("submit", function(evento) {
+        evento.preventDefault();
+        limpiarErrores();
+
+        var hayErrores = false;
+        var asunto = $("#asunto").val().trim();
+        var email = $("#email").val().trim();
+        var mensaje = $("#mensaje").val().trim();
+        var archivos = $("#archivo")[0].files;
+        var patronEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if(asunto.length < 3) {
+            mostrarError("asunto", "Escribe el asunto de tu mensaje.");
+            hayErrores = true;
+        }
+
+        if(email === "") {
+            mostrarError("email", "Escribe tu correo electrónico");
+            hayErrores = true
+        } else if(!patronEmail.test(email)) {
+            mostrarError("email", "El correo no es válido (ejemplo: nombre@correo.com).");
+            hayErrores = true;
+        }
+
+        if (archivos.length > 0 && archivos[0].size > 5 * 1024 * 1024) {
+            mostrarError("archivo", "El archivo no puede pesar más de 5MB.");
+            hayErrores = true;
+        }
+
+        if(mensaje.length < 10) {
+            mostrarError("mensaje", "El mensaje debe tener al menos 10 caracteres");
+            hayErrores = true;
+        }
+
+        if(!hayErrores) {
+            $exito
+                .text("¡Gracias! Hemos recibido tu mensaje y te responderemos pronto.")
+                .fadeIn(300)
+                .delay(4000)
+                .fadeOut(300);
+            this.reset();
+            $(".nombre-archivo").text("Ningún archivo");
+        }
+    });
+
+    $formulario.on("reset", function() {
+        limpiarErrores();
+        $(".nombre-archivo").text("Ningún archivo");
+    });
+
+    $formulario.find(".form-input").on("input", function() {
+        $(this).removeClass("is-error");
+        $("#error-" + this.id).slideUp(200);
+    });
+});
