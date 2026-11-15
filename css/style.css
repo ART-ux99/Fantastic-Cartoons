@@ -1006,6 +1006,7 @@ footer {
 /* Movil */
 
 @media (max-width: 488px) {
+
     .filtros {
         flex-wrap: wrap;
         justify-content: center;
