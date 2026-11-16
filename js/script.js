@@ -389,7 +389,7 @@ function prepararRango(idSeccion, productos, alCambiar){
         var hasta = (max - limiteMin) / total * 100;
         relleno.style.left = desde + "%";
         relleno.style.width = (hasta - desde) + "%";
-        texto.textContent = formatoPrecio(min) + "-" + formatoPrecio(max);
+        texto.textContent = formatoPrecio(min) + " - " + formatoPrecio(max);
 
         alCambiar(min, max);
     }
@@ -523,7 +523,7 @@ $ (function() {
     //Validacion Forms
     var $formulario = $(".formulario");
 
-    var $exito = $('<p class="form-exito" role="status></p>').hide();
+    var $exito = $('<p class="form-exito" role="status"></p>').hide();
     $formulario.append($exito);
 
     function mostrarError(idCampo, mensaje) {
@@ -532,7 +532,7 @@ $ (function() {
     }
 
     function limpiarErrores() {
-        $formulario.find("is-error").removeClass("is.-error");
+        $formulario.find(".is-error").removeClass("is-error");
         $formulario.find(".form-error").slideUp(200);
     }
 
