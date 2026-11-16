@@ -4,7 +4,7 @@ console.log("ayuda");
 var novedades = [
     {
         titulo: "Locke & Key al infierno.",
-        autor: "Joe Hill(guion)/ Grabriel Rodriguez(ilustraciones)",
+        autor: "Joe Hill (guion) y Grabriel Rodriguez (ilustraciones)",
         precio: 15.50,
         disponible: true,
         novedad: true,
@@ -31,7 +31,7 @@ var novedades = [
     },
     {
         titulo: "Los rios del pasado.",
-        autor: "Stephen Desberg(guion) y Yannick Corboz(ilustraciones)",
+        autor: "Stephen Desberg (guion) y Yannick Corboz (ilustraciones)",
         precio: 18.50,
         disponible: true,
         novedad: true,
