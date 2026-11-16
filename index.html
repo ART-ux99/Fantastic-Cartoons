@@ -4,6 +4,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Fantastic Cartoons</title>
+      <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
      <link rel="stylesheet" href="css/style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +69,7 @@
         </section>
 
         <section id="novedades" class="seccion">
-            <h1 class="seccion-titulo">Novedades</h1>
+            <h1 class="seccion-titulo" data-aos="zoom-in">Novedades</h1>
             <div class="scroll-horizontal">
                 <button type="button" class="scroll-flecha">
                     <i data-feather="chevron-left"></i>
@@ -81,7 +82,7 @@
         </section>
 
         <section id="catalogo" class="seccion">
-            <h1 class="seccion-titulo">Catalogo general</h1>
+            <h1 class="seccion-titulo" data-aos="zoom-in">Catalogo general</h1>
             <div class="filtros">
                 <button class="filtro_btn is-active" type="button" data-filtro="todos">Todos</button>
                 <button class="filtro_btn" type="button" data-filtro="europeo">Europeo</button>
@@ -108,9 +109,9 @@
         </section>
 
         <section id="eventos" class="seccion">
-            <h1 class="seccion-titulo">Eventos</h1>
+            <h1 class="seccion-titulo" data-aos="zoom-in">Eventos</h1>
             <div class="grid_eventos">
-                <article class="card_evento evento-1">
+                <article class="card_evento evento-1" data-aos="fade-up" data-aos-delay="0">
                     <h2 class="evento-titulo"> Presentacion especial de comics clasicos</h2>
                     <p class="descripcion">Muestra de las series de comics más especiales que han existido en todos los tiempos. </p>
                     <ul class="datos">
@@ -118,7 +119,7 @@
                         <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons - C/Calanda Nº9 28043 Madrid/España</li>
                     </ul>
                 </article>
-                <article class="card_evento evento-2">
+                <article class="card_evento evento-2" data-aos="fade-up" data-aos-delay="100">
                     <h2 class="evento-titulo">Exhibición oficial de los personajes del mundo del comic más famosos</h2>
                     <p class="descripcion">Historia detrás de los personajes de comics más famosos y venta de objetos relacionados con ellos.</p>
                     <ul class="datos">
@@ -126,7 +127,7 @@
                         <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons - C/Calanda Nº9 28043 Madrid/España</li>
                     </ul>
                 </article>
-                <article class="card_evento evento-3">
+                <article class="card_evento evento-3" data-aos="fade-up" data-aos-delay="200">
                     <h2 class="evento-titulo">Clase especial con autores reconocidos del mundo del comic</h2>
                     <p class="descripcion">Los autores más famosos del mundo del comic enseñan sus bocetos y el proceso de elaboracion de sus comics ¿A que esperas para verlo?</p>
                     <ul class="datos">
@@ -134,7 +135,7 @@
                         <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons - C/Calanda Nº9 28043 Madrid/España</li>
                     </ul>
                 </article>
-                <article class="card_evento evento-4">
+                <article class="card_evento evento-4" data-aos="fade-up" data-aos-delay="300">
                     <h2 class="evento-titulo">Supermuseo de replicas de los comics más vendidos</h2>
                     <p class="descripcion">Exhibición y venta de replicas de los comics más vendidos a nivel mundial.</p>
                     <ul class="datos">
@@ -142,7 +143,7 @@
                         <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons - C/Calanda Nº9 28043 Madrid/España</li>
                     </ul>
                 </article>
-                <article class="card_evento evento-5">
+                <article class="card_evento evento-5" data-aos="fade-up" data-aos-delay="400">
                     <h2 class="evento-titulo">Quinceaba feria de comics</h2>
                     <p class="descripcion">Nuestra tienda abre sus puertas a la 15ª feria del comic, donde podrás disfrutar de todo tipo de géneros comicos y adquirir tus favoritos.</p>
                     <ul class="datos">
@@ -150,7 +151,7 @@
                         <li><i data-feather="map-pin"></i>Tienda Fantastic Cartoons - C/Calanda Nº9 28043 Madrid/España</li>
                     </ul>
                 </article>
-                <article class="card_evento evento-6">
+                <article class="card_evento evento-6" data-aos="fade-up" data-aos-delay="500">
                     <h2 class="evento-titulo">Concurso de cosplay</h2>
                     <p class="descripcion">Ven disfrazado del personaje de comic que más admires. Habrá premio para los tres mejores.</p>
                     <ul class="datos">
@@ -162,7 +163,7 @@
         </section>
 
         <section id="merchandaising" class="seccion">
-            <h1 class="seccion-titulo">Merchandaising</h1>
+            <h1 class="seccion-titulo" data-aos="zoom-in">Merchandaising</h1>
             <div class="filtro-precio">
                 <p class="precio-texto">3.00€ - 20.00€</p>
                 <div class="precio-fila">
@@ -190,7 +191,7 @@
         </section>
 
         <section id="contacto" class="seccion">
-            <h1 class="seccion-titulo">Contacto</h1>
+            <h1 class="seccion-titulo" data-aos="zoom-in">Contacto</h1>
             <div class="contacto">
                 <div class="contacto-info">
                     <h2>Nuestra ubicación, telefono y correo más inmediatos</h2>
@@ -284,6 +285,7 @@
     <script>
         feather.replace();
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script 
     src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>

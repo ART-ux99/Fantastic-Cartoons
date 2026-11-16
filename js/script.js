@@ -596,3 +596,9 @@ $ (function() {
         $("#error-" + this.id).slideUp(200);
     });
 });
+
+AOS.init({
+   duration: 2000,
+   offset: 100,
+   only: true
+});
