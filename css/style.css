@@ -583,6 +583,7 @@ header {
 
 .contacto-info {
     flex: 4;
+    overflow: hidden;
 }
 
 .formulario{
@@ -593,6 +594,7 @@ header {
     padding: 2rem;
     border-radius: 24px;
     background-color: var(--blue-lavender);
+    overflow: hidden;
 }
 
 .contacto-info h2 {
