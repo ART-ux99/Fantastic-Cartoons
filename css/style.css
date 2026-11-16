@@ -158,11 +158,13 @@ header {
 
 .hero { 
     position: relative;
-    overflow: hidden;
     background-color: var(--black-violet);
-    height: 72vh;
-    min-height: 460px;
-    max-height: 640px;
+}
+
+.slideshow__pantalla {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1240 / 483;
 }
 
 .slide {
@@ -174,25 +176,30 @@ header {
     display: none;
 }
 
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .slide:first-child {
     display: block;
 }
 
 .slideshow__controles {
-    position: absolute;
-    left: 50%;
-    bottom: 1.8rem;
-    transform: translateX(-50%);
     display: flex;
     gap: 0.7rem;
+    justify-content: center;
+    padding: 0.8rem 0;
 }
 
 .punto {
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 50%;
-    background-color: var(--black-violet);
+    background-color: var(--background);
     transition: background-color 0.25s ease, transform 0.25s ease;
+    border: none;
 }
 
 .punto.is-active {
@@ -413,6 +420,7 @@ header {
     position: relative;
     width: 240px;
     height: 24px;
+    max-width: 60vw;
 }
 
 .rango-linea {
@@ -931,12 +939,12 @@ footer {
         display: none;
     }
 
-    .slideshow__controles {
-        bottom: 1.2rem;
-    }
-
     .seccion {
         padding-top: 3rem;
+    }
+
+    .slideshow__pantalla {
+        aspect-ratio: 730 / 565;
     }
 
     .scroll-flecha {
@@ -950,11 +958,6 @@ footer {
     .filtros {
         justify-content: space-evenly;
         gap: 1.5rem;
-    }
-
-    .precio-fila {
-        flex-direction: column;
-        gap: 0.5rem;
     }
 
     .galeria {
@@ -1021,6 +1024,10 @@ footer {
 
     .contenido {
         flex-direction: column;
+    }
+
+    .slideshow__pantalla {
+        aspect-ratio: 290 / 450;
     }
 }
 

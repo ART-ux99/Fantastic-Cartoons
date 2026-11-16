@@ -44,9 +44,21 @@
     <main>
         <section class="hero">
             <div class="slideshow__pantalla">
-                <img class="slide" src="media/imagenes/Hero1.png" alt="Hero 1">
-                <img class="slide" src="media/imagenes/Hero2.png" alt="Hero 2">
-                <img class="slide" src="media/imagenes/Hero3.png" alt="Hero 3">
+                <picture class="slide">
+                    <source media="(max-width: 488px)" srcset="media/imagenes/Hero1movil.png">
+                    <source media="(max-width: 768px)" srcset="media/imagenes/Hero1tablet.png">
+                    <img src="media/imagenes/Hero1.png" alt="Hero 1">
+                </picture>
+                <picture class="slide">
+                    <source media="(max-width: 488px)" srcset="media/imagenes/Hero2movil.png">
+                    <source media="(max-width: 768px)" srcset="media/imagenes/Hero2tablet.png">
+                    <img src="media/imagenes/Hero2.png" alt="Hero 2">
+                </picture>
+                 <picture class="slide">
+                    <source media="(max-width: 488px)" srcset="media/imagenes/Hero3movil.png">
+                    <source media="(max-width: 768px)" srcset="media/imagenes/Hero3tablet.png">
+                    <img src="media/imagenes/Hero3.png" alt="Hero 3">
+                </picture>
           </div>
             <div class="slideshow__controles">
                 <button class="punto is-active" type="button"></button>
