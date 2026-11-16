@@ -597,6 +597,31 @@ $ (function() {
     });
 });
 
+if (window.Typed) {
+    var titulos = document.querySelectorAll(".seccion-titulo");
+
+    var observador = new IntersectionObserver(function (entradas) {
+        for (var i = 0; i < entradas.length; i++) {
+            if (entradas[i].isIntersecting) {
+                var titulo = entradas[i].target;
+                observador.unobserve(titulo); 
+
+                new Typed(titulo, {
+                    strings: [titulo.getAttribute("data-texto")],
+                    typeSpeed: 70,
+                    showCursor: false
+                });
+            }
+        }
+    }, { threshold: 0.6 });
+
+    for (var t = 0; t < titulos.length; t++) {
+        titulos[t].setAttribute("data-texto", titulos[t].textContent.trim());
+        titulos[t].innerHTML = "&nbsp;";  
+        observador.observe(titulos[t]);
+    }
+}
+
 AOS.init({
    duration: 2000,
    offset: 100,
